@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header id="pc-header">
+        <div class="topo">
+            Boa pizza, boa companhia. Esse é o nosso clube!
+        </div>
+
+        <nav class="menu">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Pizza Club">
+                <p>SABOR QUE REÚNE</p>
+            </div>
+
+            <button class="pc-menu-toggle" id="pc-menu-toggle" type="button"
+                aria-label="Abrir menu" aria-expanded="false" aria-controls="pc-menu">
+                <span id="pc-menu-icon">☰</span>
+            </button>
+
+            <div class="links" id="pc-menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <a href="#" class="pedidos">Fazer pedido ↗</a>
+        </nav>
+    </header>
+
+    <main class="pc-pagina">
+
+        <div class="pc-cabecalho">
+            <p>SEU PEDIDO</p>
+            <h1>Carrinho de compras</h1>
+            <span>Confira os itens, escolha como receber e finalize.</span>
+        </div>
+
+        <!-- CARRINHO VAZIO -->
+        <section id="carrinho-vazio" class="pc-card pc-vazio" hidden>
+            <span class="pc-emoji">🛒</span>
+            <h2>Seu carrinho está vazio</h2>
+            <p>Que tal escolher uma pizza para começar?</p>
+            <a href="cardapio.html" class="pc-botao">Ver cardápio ↗</a>
+        </section>
+
+        <!-- CARRINHO COM ITENS -->
+        <div id="carrinho-conteudo" class="pc-carrinho" hidden>
+
+            <section class="pc-card">
+                <h2>Itens do pedido</h2>
+                <ul id="lista-carrinho" class="pc-itens"></ul>
+                <button type="button" class="pc-limpar" id="btn-limpar">Esvaziar carrinho</button>
+            </section>
+
+            <aside class="pc-card pc-resumo">
+                <h2>Resumo</h2>
+
+                <div class="pc-opcoes" role="radiogroup" aria-label="Forma de recebimento">
+                    <label class="pc-opcao"><input type="radio" name="tipo" value="entrega" checked> 🛵 Entrega</label>
+                    <label class="pc-opcao"><input type="radio" name="tipo" value="retirada"> 🏪 Retirada</label>
+                </div>
+
+                <div class="pc-campo">
+                    <label for="pagamento">Forma de pagamento</label>
+                    <select id="pagamento">
+                        <option value="pix">Pix</option>
+                        <option value="cartao">Cartão na entrega/retirada</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+
+                <div class="pc-campo" id="campo-troco" hidden>
+                    <label for="troco">Troco para (R$)</label>
+                    <input id="troco" type="text" inputmode="numeric" maxlength="5" placeholder="Ex.: 100" autocomplete="off">
+                </div>
+
+                <div class="pc-campo">
+                    <label for="obs">Observações (opcional)</label>
+                    <textarea id="obs" maxlength="120" placeholder="Ex.: sem cebola, tocar o interfone..."></textarea>
+                    <div class="pc-contador" id="obs-contador">0/120</div>
+                </div>
+
+                <div class="pc-linha"><span>Subtotal</span><span id="r-sub">R$ 0,00</span></div>
+                <div class="pc-linha"><span>Entrega</span><span id="r-taxa">R$ 0,00</span></div>
+                <div class="pc-linha pc-total"><span>Total</span><span id="r-total">R$ 0,00</span></div>
+                <p class="pc-dica" id="r-dica"></p>
+
+                <div id="carrinho-msg" class="pc-alerta" role="alert" hidden></div>
+
+                <button type="button" class="pc-botao" id="btn-finalizar">Finalizar pedido ↗</button>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="rodape-coluna">
+            <img src="imagens/logo.png" alt="Pizza Club">
+            <p>
+                Mais que pizza, momentos especiais.
+                Faça parte dessa experiência!
+            </p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>EXPLORE</h3>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso cardápio</a>
+            <a href="sobre.html">Nossa história</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>ATENDIMENTO</h3>
+            <p>Horário de funcionamento</p>
+            <p>Consulte nossos horários</p>
+            <p>Delivery e retirada</p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>FALE COM A GENTE</h3>
+            <p>Tem alguma dúvida?</p>
+            <a href="contato.html">Entre em contato ↗</a>
+        </div>
+
+        <div class="rodape-final">
+            © 2026 Pizza Club. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+</body>
+</html>

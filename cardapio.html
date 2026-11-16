@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="pc-header">
+
+        <div class="topo">
+            Boa pizza, boa companhia. Esse é o nosso clube!
+        </div>
+
+        <nav class="menu">
+
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Pizza Club">
+                <p>SABOR QUE REÚNE</p>
+            </div>
+
+            <button class="pc-menu-toggle"
+                id="pc-menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="pc-menu">
+                <span id="pc-menu-icon">☰</span>
+            </button>
+
+            <div class="links" id="pc-menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <a href="#" class="pedidos">Fazer pedido ↗</a>
+
+        </nav>
+    </header>
+
+
+    <!-- BANNER DO CARDÁPIO -->
+    <section class="banner-cardapio">
+
+        <div class="texto-cardapio">
+
+            <p>NOSSO</p>
+
+            <h1>cardápio</h1>
+
+            <span>
+                Pizzas, massas, bebidas e muito mais.
+                Tudo feito com ingredientes de qualidade.
+            </span>
+
+        </div>
+
+       <img src="./imagens/paginas/ingredientes.png"
+     alt="Tomates, manjericão e temperos">
+
+    </section>
+
+
+    <!-- CATEGORIAS -->
+    <section class="categorias">
+
+        <button class="categoria ativa" data-categoria="pizzas">
+            Pizzas
+        </button>
+
+        <button class="categoria" data-categoria="massas">
+            Massas
+        </button>
+
+        <button class="categoria" data-categoria="bebidas">
+            Bebidas
+        </button>
+
+        <button class="categoria" data-categoria="combos">
+            Combos
+        </button>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+    <section class="produtos">
+
+        <div class="grade-produtos">
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/margherita.png" alt="Pizza Margherita">
+                <h3>Margherita</h3>
+                <p>Molho de tomate, mussarela, manjericão e azeite.</p>
+                <strong>R$ 40,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/calabresa.png" alt="Pizza Calabresa">
+                <h3>Calabresa</h3>
+                <p>Molho de tomate, mussarela, calabresa e orégano.</p>
+                <strong>R$ 54,90</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/portuguesa.png" alt="Pizza Portuguesa">
+                <h3>Portuguesa</h3>
+                <p>Molho de tomate, mussarela, presunto, ovo, cebola e azeitona.</p>
+                <strong>R$ 50,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/quatro-queijos.png" alt="Pizza Quatro Queijos">
+                <h3>Quatro Queijos</h3>
+                <p>Molho de tomate, mussarela, parmesão, gorgonzola e catupiry.</p>
+                <strong>R$ 62,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/frango-catupiry.png" alt="Pizza Frango com Catupiry">
+                <h3>Frango com Catupiry</h3>
+                <p>Molho de tomate, frango desfiado e catupiry.</p>
+                <strong>R$ 58,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/pepperoni.png" alt="Pizza Pepperoni">
+                <h3>Pepperoni</h3>
+                <p>Molho de tomate, mussarela e pepperoni.</p>
+                <strong>R$ 64,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/vegetariana.png" alt="Pizza Vegetariana">
+                <h3>Vegetariana</h3>
+                <p>Molho de tomate, mussarela, alho poró, legumes frescos e orégano.</p>
+                <strong>R$ 56,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+            <article class="produto" data-tipo="pizzas">
+                <img src="imagens/paginas/pizzas/lombo.png" alt="Pizza de Lombo">
+                <h3>Lombo</h3>
+                <p>Molho de tomate, mussarela, lombo e orégano.</p>
+                <strong>R$ 62,00</strong>
+                <a href="#" class="adicionar">Adicionar ↗</a>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-coluna">
+            <img src="imagens/logo.png" alt="Pizza Club">
+            <p>
+                Mais que pizza, momentos especiais.
+                Faça parte dessa experiência.
+            </p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>EXPLORE</h3>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso cardápio</a>
+            <a href="sobre.html">Nossa história</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>ATENDIMENTO</h3>
+            <p>Horário de funcionamento</p>
+            <p>Consulte nossos horários</p>
+            <p>Delivery e retirada</p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>FALE COM A GENTE</h3>
+            <p>Tem alguma dúvida?</p>
+            <p>Entre em contato ↗</p>
+        </div>
+
+        <div class="rodape-final">
+            © 2026 Pizza Club. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+</body>
+</html>

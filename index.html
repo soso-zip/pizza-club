@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header id="pc-header">
+        <div class="topo">
+            Boa pizza, boa companhia.
+            Esse é o nosso clube!
+        </div>
+
+        <nav class="menu">
+
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Pizza Club">
+                <p>SABOR QUE REÚNE</p>
+            </div>
+
+            <button
+                class="pc-menu-toggle"
+                id="pc-menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="pc-menu">
+                <span id="pc-menu-icon">☰</span>
+            </button>
+
+            <div class="links" id="pc-menu">
+    <a href="index.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+            </div>
+
+            <a href="#" class="pedidos">Fazer pedido ↗</a>
+
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="texto-banner">
+
+            <p class="subtitulo">
+                FEITA COM CARINHO, SERVIDA COM SABOR
+            </p>
+
+            <h2>
+                Seu lugar favorito
+                é no <span>Pizza Club.</span>
+            </h2>
+
+            <p class="descricao">
+                Uma boa pizza fica ainda melhor quando compartilhada.
+                Escolha seu sabor favorito e faça parte do nosso clube!
+            </p>
+
+            <a href="#cardapio" class="botao-banner">
+                Ver cardápio ↗
+            </a>
+
+        </div>
+    </section>
+
+   
+<section class="cardapio-home" id="cardapio">
+
+    <div class="titulo-cardapio-home">
+        <p>NOSSO</p>
+
+        <h2>Feito para compartilhar.</h2>
+
+        <span>
+            Sabores especiais preparados com carinho
+            para deixar seus momentos ainda melhores.
+        </span>
+    </div>
+
+    <div class="sabores-destaque">
+
+        <!-- PRIMEIRA PIZZA -->
+        <article class="sabor-card">
+            <img src="imagens/paginas/pizzas/margherita.png"
+                 alt="Pizza Margherita">
+
+            <h3>Margherita</h3>
+
+            <p>
+                Molho de tomate, mussarela,
+                manjericão e azeite.
+            </p>
+        </article>
+
+        <!-- SEGUNDA PIZZA -->
+        <article class="sabor-card">
+            <img src="imagens/paginas/pizzas/calabresa.png"
+                 alt="Pizza de Calabresa">
+
+            <h3>Calabresa</h3>
+
+            <p>
+                Molho de tomate, mussarela,
+                calabresa e orégano.
+            </p>
+        </article>
+
+        <!-- TERCEIRA PIZZA -->
+        <article class="sabor-card">
+            <img src="imagens/paginas/pizzas/quatro-queijos.png"
+                 alt="Pizza Quatro Queijos">
+
+            <h3>Quatro Queijos</h3>
+
+            <p>
+                Mussarela, parmesão,
+                gorgonzola e catupiry.
+            </p>
+        </article>
+
+    </div>
+
+    <a href="cardapio.html" class="botao-cardapio-home">
+        Ver cardápio completo ↗
+    </a>
+
+</section>
+
+
+<section class="pc-passos">
+    <div class="pc-tit">
+        <p>COMO FUNCIONA</p>
+        <h2>Do forno até você, em 3 passos.</h2>
+    </div>
+    <div class="pc-passos-grade">
+        <article><span>🍕</span><h3>1. Escolha</h3><p>Navegue pelo cardápio, use a busca e encontre seu sabor favorito.</p></article>
+        <article><span>🛒</span><h3>2. Peça</h3><p>Adicione ao carrinho, escolha entrega ou retirada e finalize.</p></article>
+        <article><span>🛵</span><h3>3. Receba</h3><p>Acompanhe o status em "Meus pedidos" e aproveite!</p></article>
+    </div>
+</section>
+
+<section class="pc-clube">
+    <div>
+        <h2>Faça parte do clube</h2>
+        <p>Crie sua conta para fazer pedidos, salvar seu endereço e acompanhar tudo em um só lugar.</p>
+    </div>
+    <div class="pc-clube-botoes">
+        <a class="pc-botao" href="cadastro.html">Criar conta</a>
+        <a class="pc-botao pc-botao-claro" href="login.html">Já tenho conta</a>
+    </div>
+</section>
+
+
+<footer class="rodape">
+
+    <div class="rodape-coluna">
+        <img src="imagens/logo.png" alt="Pizza Club">
+
+        <p>
+            Mais que pizza, momentos especiais.
+            Faça parte dessa experiência!
+        </p>
+    </div>
+
+    <div class="rodape-coluna">
+        <h3>EXPLORE</h3>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Nosso cardápio</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html">Fale conosco</a>
+    </div>
+
+    <div class="rodape-coluna">
+        <h3>ATENDIMENTO</h3>
+        <p>Horário de funcionamento</p>
+        <p>Consulte nossos horários</p>
+        <p>Delivery e retirada</p>
+    </div>
+
+    <div class="rodape-coluna">
+        <h3>FALE COM A GENTE</h3>
+        <p>Tem alguma dúvida?</p>
+        <a href="contato.html">Entre em contato ↗</a>
+    </div>
+
+    <div class="rodape-final">
+        © 2026 Pizza Club. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+</body>
+</html>

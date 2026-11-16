@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-login">
+
+    <header id="pc-header">
+        <nav class="menu">
+            <a href="index.html" class="logo">Pizza Club</a>
+
+            <button class="pc-menu-toggle" id="pc-menu-toggle"
+                aria-label="Abrir menu">
+                <span id="pc-menu-icon">☰</span>
+            </button>
+
+            <div class="links" id="pc-menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="pedidos.html">Meus pedidos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <section class="login-card">
+
+            <div class="login-logo">
+                <h1>Pizza Club</h1>
+                <p>Uma experiência deliciosa começa aqui!</p>
+            </div>
+
+            <h2>Bem-vindo de volta!</h2>
+            <p class="login-descricao">
+                Entre na sua conta para continuar.
+            </p>
+
+            <form id="form-login">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <a href="#" class="esqueci-senha">
+                    Esqueceu sua senha?
+                </a>
+
+                <button type="submit" class="btn-login">
+                    Entrar
+                </button>
+            </form>
+
+            <div class="login-cadastro">
+                Ainda não tem uma conta?
+                <a href="cadastro.html">Cadastre-se</a>
+            </div>
+
+            <a href="index.html" class="voltar-inicio">
+                Voltar para o início
+            </a>
+
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById("form-login").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("A tela de login está pronta visualmente. A autenticação será conectada amanhã!");
+        });
+    </script>
+
+</body>
+</html>

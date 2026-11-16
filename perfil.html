@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil | Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header id="pc-header">
+        <div class="topo">
+            Boa pizza, boa companhia. Esse é o nosso clube!
+        </div>
+
+        <nav class="menu">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Pizza Club">
+                <p>SABOR QUE REÚNE</p>
+            </div>
+
+            <button class="pc-menu-toggle" id="pc-menu-toggle" type="button"
+                aria-label="Abrir menu" aria-expanded="false" aria-controls="pc-menu">
+                <span id="pc-menu-icon">☰</span>
+            </button>
+
+            <div class="links" id="pc-menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <a href="#" class="pedidos">Fazer pedido ↗</a>
+        </nav>
+    </header>
+
+    <main class="pc-pagina">
+
+        <div class="pc-cabecalho">
+            <p>MINHA CONTA</p>
+            <h1>Perfil</h1>
+            <span>Veja e atualize seus dados e seu endereço de entrega.</span>
+        </div>
+
+        <div class="pc-perfil">
+
+            <aside class="pc-card pc-lateral">
+                <div class="pc-avatar" id="perfil-avatar">?</div>
+                <h2 id="perfil-nome"></h2>
+                <p id="perfil-email"></p>
+                <p id="perfil-desde"></p>
+
+                <div class="pc-estat">
+                    <div><strong id="perfil-qtd">0</strong><span>pedidos</span></div>
+                    <div><strong id="perfil-gasto">R$ 0,00</strong><span>no total</span></div>
+                </div>
+
+                <a href="pedidos.html" class="pc-botao pc-botao-sec">Meus pedidos</a>
+                <button type="button" class="pc-botao pc-botao-sec" id="btn-sair">Sair da conta</button>
+            </aside>
+
+            <div>
+
+                <form id="form-perfil" class="pc-card" novalidate>
+                    <h2>Dados pessoais</h2>
+                    <div id="perfil-msg" class="pc-alerta pc-ok" role="status" hidden></div>
+                    <div id="campos-pessoais"></div>
+                    <div class="pc-acoes-form">
+                        <button type="submit" class="pc-botao">Salvar alterações</button>
+                    </div>
+                </form>
+
+                <form id="form-senha" class="pc-card" novalidate>
+                    <h2>Alterar senha</h2>
+                    <div id="senha-msg" class="pc-alerta pc-ok" role="status" hidden></div>
+                    <div id="campos-trocar-senha"></div>
+                    <div class="pc-acoes-form">
+                        <button type="submit" class="pc-botao">Alterar senha</button>
+                    </div>
+                </form>
+
+                <section class="pc-card">
+                    <h2>Zona de perigo</h2>
+                    <p class="pc-dica">Ao excluir a conta, seus dados e o histórico de pedidos são apagados.</p>
+                    <button type="button" class="pc-botao pc-botao-perigo" id="btn-excluir">Excluir minha conta</button>
+                </section>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="rodape-coluna">
+            <img src="imagens/logo.png" alt="Pizza Club">
+            <p>
+                Mais que pizza, momentos especiais.
+                Faça parte dessa experiência!
+            </p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>EXPLORE</h3>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Nosso cardápio</a>
+            <a href="sobre.html">Nossa história</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>ATENDIMENTO</h3>
+            <p>Horário de funcionamento</p>
+            <p>Consulte nossos horários</p>
+            <p>Delivery e retirada</p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>FALE COM A GENTE</h3>
+            <p>Tem alguma dúvida?</p>
+            <a href="contato.html">Entre em contato ↗</a>
+        </div>
+
+        <div class="rodape-final">
+            © 2026 Pizza Club. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+</body>
+</html>
